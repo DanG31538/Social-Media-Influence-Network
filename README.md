@@ -55,7 +55,7 @@ The `BasicFeatureCreator` class adds derived features to the dataset, including:
 
 ### 3. Exploratory Data Analysis (EDA)
 
-The `ExploratoryDataAnalysis` class performs analysis of the data, including:
+The `ExploratoryDataAnalysis` class performs comprehensive analysis of the data, including:
 - User influence analysis
 - Viral content analysis
 - Content feature analysis
@@ -63,16 +63,27 @@ The `ExploratoryDataAnalysis` class performs analysis of the data, including:
 Visualizations are generated to show distributions and relationships within the data:
 
 ![Follower Distribution](visualization/exploratory_data_analysis/follower_distribution.png)
-*Figure 1: Distribution of follower counts across users*
+*Figure 1: Distribution of follower counts across users (Log Scale)*
 
 ![Engagement vs Followers](visualization/exploratory_data_analysis/engagement_vs_followers.png)
-*Figure 2: Relationship between engagement and follower count*
+*Figure 2: Relationship between engagement rate and follower count (Log-Log Scale)*
 
 ![Likes Distribution](visualization/exploratory_data_analysis/likes_distribution.png)
-*Figure 3: Distribution of likes across posts*
+*Figure 3: Distribution of likes across posts (Log Scale)*
 
 ![Likes vs Comments](visualization/exploratory_data_analysis/likes_vs_comments.png)
-*Figure 4: Relationship between likes and comments*
+*Figure 4: Relationship between likes and comments (Log-Log Scale)*
+
+![Engagement by Hashtags](visualization/exploratory_data_analysis/engagement_by_hashtags.png)
+*Figure 5: Engagement rate distribution by number of hashtags*
+
+![Engagement by Content Type](visualization/exploratory_data_analysis/engagement_by_content_type.png)
+*Figure 6: Engagement rate distribution by content type (video vs. non-video)*
+
+Key features of the EDA:
+- Log scales are used to handle the wide range of values in follower counts, likes, and engagement rates.
+- Relationships between different engagement metrics (likes, comments, followers) are explored.
+- The impact of content features (number of hashtags, video vs. non-video) on engagement is analyzed.
 
 ### 4. Feature Engineering
 
