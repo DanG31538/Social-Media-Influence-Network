@@ -90,7 +90,7 @@ Three models were developed to analyze different aspects of influencer data:
    - Implements the Louvain method for community detection.
    - Provides visualization of the community structure.
 
-   ![Community Structure](visualization/community_detection_model/community_structure.png)
+   ![Community Structure](visualization/models/community_structure.png)
    *Figure 5: Visualization of detected influencer communities*
 
 2. **Influential Users Model:** 
@@ -98,7 +98,7 @@ Three models were developed to analyze different aspects of influencer data:
    - Defines influential users as those in the top 25% of follower counts.
    - Includes feature importance analysis.
 
-   ![Feature Importance for Influential Users](visualization/InfluentialUsersModel_feature_importance.png)
+   ![Feature Importance for Influential Users](visualization/models/InfluentialUsersModel_feature_importance.png)
    *Figure 6: Feature importance for predicting influential users*
 
 3. **Viral Content Model:** 
@@ -106,7 +106,7 @@ Three models were developed to analyze different aspects of influencer data:
    - Defines viral content as posts in the top 10% of likes.
    - Uses content-specific features and engagement metrics.
 
-   ![Feature Importance for Viral Content](visualization/ViralContentModel_feature_importance.png)
+   ![Feature Importance for Viral Content](visualization/models/ViralContentModel_feature_importance.png)
    *Figure 7: Feature importance for predicting viral content*
 
 ### 6. Deployment (Docker)
