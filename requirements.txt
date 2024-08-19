@@ -1,0 +1,15 @@
+numpy
+pandas
+Pillow
+requests
+opencv-python-headless
+tensorflow
+scikit-learn
+imagehash
+matplotlib
+seaborn
+pytest
+flake8
+black
+networkx
+python-louvain
