@@ -139,3 +139,30 @@ The project is containerized using Docker:
    ```
    docker run -v /path/to/dataset:/app/dataset -v /path/to/visualization:/app/visualization instagram-analysis
    ```
+## Final Thoughts
+Throughout the development of this project, some features were conceptualized but couldn't be fully implemented due to time constraints. I believe it's valuable to discuss these here, as they reflect my thought process and vision for the project's potential.
+
+#### Image Hashing and Advanced Image Analysis
+One of the most promising yet challenging aspects was the implementation of perceptual hashing (pHash) for image analysis. While the groundwork for this feature is present in the codebase, several technical hurdles prevented its full realization:
+
+- URL-based Image Processing: Reading images from URLs proved to be more complex than anticipated, especially when dealing with a large volume of data. Issues with timeouts, rate limiting, and varying image formats would need to be addressed for robust implementation.
+- Computational Intensity: Generating and comparing perceptual hashes for a large dataset is computationally expensive. Optimizing this process for efficiency while maintaining accuracy would require significant additional development time.
+- Integration with Existing Features: Incorporating pHash-based similarity metrics into our existing feature set and models would necessitate a substantial refactoring of our data pipeline and model architectures.
+
+Despite these challenges, I chose to keep the image hashing code in the project. This decision was made to demonstrate the intended direction of the analysis. With additional time, these features could be refined to offer valuable insights into content similarity and trends.
+
+#### Dockerfile and Containerization
+The Dockerfile included in the project represents an effort to containerize the application, although it may not be fully functional in its current state. Some issues that would need to be addressed include:
+
+- Ensuring all dependencies are correctly specified and installed
+- Properly setting up the environment within the container
+- Handling data persistence and volume mounting for datasets
+
+Retaining the Dockerfile in the project, even in its unfinished state, serves multiple purposes:
+
+It showcases awareness of containerization's critical role in contemporary data science practices.
+It lays the groundwork for future refinement and full implementation of a containerized environment.
+It exemplifies a comprehensive approach to project design, extending beyond code to encompass deployment considerations and scalability planning.
+
+While time constraints prevented the full implementation of these advanced features, their inclusion in the codebase serves to illustrate the project's potential for growth and sophistication. The focus on maintaining a structured pipeline and a comprehensive project architecture was prioritized over perfecting individual components.
+This approach not only showcases my problem-solving process and technical aspirations but also leaves the project in a state where future developments can be more readily incorporated. It underscores the importance of balancing immediate functionality with long-term scalability and feature expansion in data science projects.

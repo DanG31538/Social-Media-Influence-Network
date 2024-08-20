@@ -28,6 +28,8 @@ class ImageFeatureExtractor:
     3. Perceptual Hashing: 
     I included image hashing (specifically, perceptual hashing or pHash) as a feature. 
     This was inspired by the idea that similar images might perform similarly, and pHash gives us a way to quantify image similarity efficiently.
+    The original intention was to use pHash more extensively in other features and analyses, such as identifying trends in viral content or grouping influencers with similar visual styles. 
+    However, due to time constraints and the complexity of implementing these advanced features before the deadline, the current version does not use this.
 
     4. Error Handling: 
     I implemented robust error handling throughout the class. When dealing with web resources (like Instagram image URLs), many things can go wrong. 
@@ -44,10 +46,7 @@ class ImageFeatureExtractor:
     Another challenge was dealing with the diversity of image types and qualities on Instagram. 
     To handle this, I made the feature extraction methods as robust as possible, using try-except blocks liberally to handle unexpected issues with specific images.
 
-    It's designed to be called after initial data loading but before final feature compilation and model training. 
-    The features it extracts will be merged with other post data to create our final feature set for modeling.
-
-    In developing this image feature extractor, I aimed to create a component that could add significant value to our Instagram influencer analysis without becoming a bottleneck in our processing pipeline. 
+    I spent a considerable amount of time and effort trying to make this work but could not in time. Despite this , I kept this in the code base to further outline my thought process. 
 """
     def __init__(self):
         self.df: Optional[pd.DataFrame] = None
